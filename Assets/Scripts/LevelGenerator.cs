@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class LevelGenerator : MonoBehaviour {
+
+    public GameObject player;
+    public GameObject enemy;
+    public int enemyAmount= 10;
+    
     public GameObject[] tiles;
     public GameObject wall;
 
@@ -130,6 +135,15 @@ public class LevelGenerator : MonoBehaviour {
     {
         CreateWallValues();
         CreateWalls();
+        SpawnObjects();
+    }
+    void SpawnObjects()
+    {
+        for (int i = 0; i < enemyAmount; i++)
+        {
+            Instantiate(enemy, createdTiles[Random.Range(0, createdTiles.Count)], Quaternion.identity);
+
+        }
     }
 
     void CreateWallValues()
