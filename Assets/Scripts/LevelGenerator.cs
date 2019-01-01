@@ -139,7 +139,7 @@ public class LevelGenerator : MonoBehaviour {
     }
     void SpawnObjects()
     {
-        Instantiate(player, createdTiles[Random.Range(0, createdTiles.Count)], Quaternion.identity);
+        Instantiate(player, createdTiles[createdTiles.Count -1], Quaternion.identity);
         for (int i = 0; i < enemyAmount; i++)
         {
             Instantiate(enemy, createdTiles[Random.Range(0, createdTiles.Count)], Quaternion.identity);
