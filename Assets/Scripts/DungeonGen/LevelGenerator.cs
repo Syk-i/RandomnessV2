@@ -6,6 +6,8 @@ public class LevelGenerator : MonoBehaviour {
 
     public GameObject player;
     public GameObject enemy;
+    public GameObject chest;
+    public int chestAmount = 1;
     public int enemyAmount= 10;
     
     public GameObject[] tiles;
@@ -143,6 +145,11 @@ public class LevelGenerator : MonoBehaviour {
         for (int i = 0; i < enemyAmount; i++)
         {
             Instantiate(enemy, createdTiles[Random.Range(0, createdTiles.Count)], Quaternion.identity);
+            
+        }
+        for (int i = 0; i < chestAmount; i++)
+        {
+            Instantiate(chest, createdTiles[Random.Range(0, createdTiles.Count)], Quaternion.identity);
 
         }
     }
