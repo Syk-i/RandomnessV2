@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 61870358720007846}
   - component: {fileID: 114236125263777918}
   - component: {fileID: 114653838382719092}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ Transform:
   m_GameObject: {fileID: 1106607072739004}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 11.405184, y: 7.06, z: 2.0664062}
-  m_LocalScale: {x: 1, y: 0.9784707, z: 1}
+  m_LocalScale: {x: 10, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -130,14 +130,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 661fea769dff7474eb15eaf1667aa054, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 0
+  health: 5
   enemyString: 0
   baseattack: 0
-  moveSpeed: 1
-  target: {fileID: 0}
-  chaseRadius: 4
-  attackRadius: 0.86
+  moveSpeed: 20
+  target: {fileID: 4419024841440612, guid: 19e65c218af0c654293931bf3f8657ec, type: 2}
+  chaseRadius: 40
+  attackRadius: 10
   homePosition: {fileID: 0}
+  DemonHealth: 0
 --- !u!212 &212432683911315814
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -169,8 +170,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1977630183
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300832, guid: c6334627e0e416b42ae3facca0248923, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
