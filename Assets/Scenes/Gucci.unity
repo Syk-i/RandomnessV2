@@ -182,6 +182,12 @@ Prefab:
       value: 
       objectReference: {fileID: 1709650993853170, guid: 5f9a9007f3927b94397c262399a1e107,
         type: 2}
+    - target: {fileID: 114684195616901288, guid: c2116757222663b4dad8c9c6779eb76c,
+        type: 2}
+      propertyPath: chest
+      value: 
+      objectReference: {fileID: 1265789417211144, guid: eebe4c3ac913d4940a1bee2d6c49ad64,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c2116757222663b4dad8c9c6779eb76c, type: 2}
   m_IsPrefabParent: 0
