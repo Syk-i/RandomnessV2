@@ -180,7 +180,7 @@ Prefab:
         type: 2}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1709650993853170, guid: 5f9a9007f3927b94397c262399a1e107,
+      objectReference: {fileID: 1708817395995046, guid: 19e65c218af0c654293931bf3f8657ec,
         type: 2}
     - target: {fileID: 114684195616901288, guid: c2116757222663b4dad8c9c6779eb76c,
         type: 2}
